@@ -34,7 +34,7 @@ p {
     background: black;
     padding: 0 15px;
     overflow: auto;
-    
+    border-radius: 5px;
     
 }
 
