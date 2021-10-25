@@ -14,7 +14,9 @@ body {
     background: black;
     
 }
-
+.logo{
+    float: left;
+}
 p {
     color:white;
     text-align:center;

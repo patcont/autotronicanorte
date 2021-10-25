@@ -9,6 +9,10 @@
     background: black;
   
 }
+
+.logo{
+    float: left;
+}
 * nav {
     background: black;
     padding: 0 15px;
