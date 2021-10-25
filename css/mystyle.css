@@ -12,6 +12,7 @@
 
 .logo{
     float: left;
+    border-radius: 5px;
 }
 * nav {
     background: black;

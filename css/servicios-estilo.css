@@ -16,6 +16,7 @@ body {
 }
 .logo{
     float: left;
+    border-radius: 5px;
 }
 p {
     color:white;
