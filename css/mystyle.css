@@ -14,6 +14,20 @@
     float: left;
     border-radius: 5px;
 }
+
+.wsd{
+    display: flex;
+    flex-direction: row;
+}
+
+.lyrics{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align:inherit;
+}
+
+
 * nav {
     background: black;
     padding: 0 15px;
