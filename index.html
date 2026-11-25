@@ -1,39 +1,115 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="es">
 <head>
-<title>Autotrónica Norte</title>
-<link rel="stylesheet" href="css/mystyle.css">
-<script src="js\main.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Autotrónica Norte — Diagnóstico electrónico automotriz</title>
+  <meta name="description" content="Diagnóstico electrónico automotriz: lectura de códigos OBD2, programación de sensores TPMS y regeneración de filtro DPF." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><path d='M30 62h40M38 62V44l12-10 12 10v18' stroke='%23ffb020' stroke-width='8' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div>
-    <center>
-        <img class="logo" src="imagen\ejemplo logo.png" height="115" width="280">
-    </center>
-   <nav class="navigation">
-        <ul class="barra-inicio">
-            <li class="letras-nav"><a href="servicios.html">Servicios</a></li>
-            <li class="letras-nav"><a href="index.html">Inicio</a></li>
-            <li class="letras-nav"><a href="contacto.html">Contacto</a></li>
-        </ul>
-       </ul>
-   </nav>
-</div>  
-<br>
-<div class="wsd">
-  <div class="lyrics">
-      <h1>
-          Titulo
-      </h1>
-      <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum sit exercitationem corrupti incidunt ratione architecto in, voluptatum aspernatur, quae beatae dicta ea soluta quisquam! Iste impedit voluptatum soluta assumenda asperiores.
-      </p>
-  </div>
-    <img class="inicio" src="imagen\best-automotive-diagnostic-scanner.jpg"; height="100%"; width="100%";>
-</div>
+  <header class="nav">
+    <a href="#inicio" class="brand">
+      <svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true">
+        <rect width="40" height="40" rx="9" fill="#ffb020" />
+        <path d="M9 26h22M13 26v-7l7-6 7 6v7M17 26v-4h6v4" stroke="#0f172a" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      Autotrónica <b>Norte</b>
+    </a>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#como">Cómo trabajo</a>
+      <a class="btn small" href="https://chatwith.io/s/autotronica-norte" target="_blank" rel="noreferrer">WhatsApp</a>
+    </nav>
+  </header>
 
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Diagnóstico electrónico automotriz</p>
+        <h1>¿Se encendió una luz en el tablero?</h1>
+        <p class="lead">Encontramos la causa con escáner profesional antes de cambiar piezas a ciegas.
+          Atención con ingeniero en mecánica automotriz y autotrónica.</p>
+        <div class="cta">
+          <a class="btn" href="https://chatwith.io/s/autotronica-norte" target="_blank" rel="noreferrer">Agendar por WhatsApp</a>
+          <a class="btn ghost" href="#servicios">Ver servicios</a>
+        </div>
+      </div>
+      <div class="dash" aria-hidden="true">
+        <div class="gauge">
+          <svg viewBox="0 0 200 120">
+            <path d="M20 110a80 80 0 0 1 160 0" stroke="#1e293b" stroke-width="14" fill="none" stroke-linecap="round" />
+            <path class="arc" d="M20 110a80 80 0 0 1 160 0" stroke="#ffb020" stroke-width="14" fill="none" stroke-linecap="round" />
+            <line class="needle" x1="100" y1="110" x2="100" y2="45" stroke="#f8fafc" stroke-width="4" stroke-linecap="round" />
+            <circle cx="100" cy="110" r="8" fill="#f8fafc" />
+          </svg>
+        </div>
+        <div class="lights">
+          <span class="light amber" title="Check engine">
+            <svg viewBox="0 0 24 24"><path d="M4 10h2V8h3V6h6v2h2l2 2h1v6h-1l-2 2H9l-2-2H6v-2H4z" fill="currentColor"/></svg>
+          </span>
+          <span class="light red" title="Presión de neumáticos">
+            <svg viewBox="0 0 24 24"><path d="M7 4c-2 2-3 5-3 8s1 6 3 8M17 4c2 2 3 5 3 8s-1 6-3 8M12 7v6M12 16v1" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>
+          </span>
+          <span class="light amber" title="Filtro de partículas">
+            <svg viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="10" rx="2" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="9" cy="12" r="1.3" fill="currentColor"/><circle cx="12" cy="12" r="1.3" fill="currentColor"/><circle cx="15" cy="12" r="1.3" fill="currentColor"/></svg>
+          </span>
+        </div>
+      </div>
+    </section>
 
-  
-<body>
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <div class="services">
+        <article class="service">
+          <div class="icon">
+            <svg viewBox="0 0 24 24"><path d="M4 10h2V8h3V6h6v2h2l2 2h1v6h-1l-2 2H9l-2-2H6v-2H4z" fill="currentColor"/></svg>
+          </div>
+          <h3>Lectura de códigos OBD2</h3>
+          <p>Escaneo completo de módulos, lectura e interpretación de códigos de falla y datos en vivo. Te explicamos qué significa cada código y qué conviene revisar.</p>
+          <p class="note">Todas las marcas</p>
+        </article>
+        <article class="service">
+          <div class="icon">
+            <svg viewBox="0 0 24 24"><path d="M7 4c-2 2-3 5-3 8s1 6 3 8M17 4c2 2 3 5 3 8s-1 6-3 8M12 7v6M12 16v1" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Sensores TPMS</h3>
+          <p>Diagnóstico y programación de sensores de presión de neumáticos con herramienta especializada, incluido el aprendizaje al cambiar llantas o sensores.</p>
+          <p class="note">Todas las marcas</p>
+        </article>
+        <article class="service">
+          <div class="icon">
+            <svg viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="10" rx="2" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="9" cy="12" r="1.3" fill="currentColor"/><circle cx="12" cy="12" r="1.3" fill="currentColor"/><circle cx="15" cy="12" r="1.3" fill="currentColor"/></svg>
+          </div>
+          <h3>Regeneración DPF</h3>
+          <p>Regeneración forzada del filtro de partículas diésel mediante herramienta electrónica, con revisión de sensores de presión diferencial.</p>
+          <p class="note">Marcas compatibles</p>
+        </article>
+      </div>
+      <p class="prices">Valores según vehículo y servicio: <a href="https://chatwith.io/s/autotronica-norte" target="_blank" rel="noreferrer">cotiza por WhatsApp</a>.</p>
+    </section>
+
+    <section id="como" class="steps">
+      <h2>Cómo trabajo</h2>
+      <ol>
+        <li><b>Cuéntame el síntoma</b> por WhatsApp: luz encendida, ruido, pérdida de potencia.</li>
+        <li><b>Diagnóstico con escáner</b> y revisión de datos en vivo para confirmar la causa.</li>
+        <li><b>Te explico el resultado</b> en simple y te recomiendo la solución, sin cambiar piezas a ciegas.</li>
+      </ol>
+    </section>
+
+    <section class="contact">
+      <h2>¿Hablamos?</h2>
+      <p>Escríbeme y coordinamos el diagnóstico.</p>
+      <a class="btn big" href="https://chatwith.io/s/autotronica-norte" target="_blank" rel="noreferrer">Escribir por WhatsApp</a>
+    </section>
+  </main>
+
+  <footer>© <span id="y"></span> Autotrónica Norte</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
 </html>
